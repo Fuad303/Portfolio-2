@@ -6,6 +6,8 @@
 }
 html{
     font-size: 67.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 ul, ol{
     list-style: none;
@@ -13,4 +15,13 @@ ul, ol{
 body a{
     text-decoration: none;
     color: #000000;
+}
+:root{
+    --bg-secondary: #777990;
+    --black: #000000;
+    --light-black: #14142b;
+    --white: #FFFFFF;
+    --border-color: #ccc;
+    --main-text-color: #4e4b66;
+    --pink: #f6f7ff;
 }

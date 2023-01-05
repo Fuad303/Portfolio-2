@@ -4,7 +4,7 @@ import TitleImg from '../images/hero-img.svg'
 
 export default function SocialMedia(props) {
   return (
-    <div className='services'>
+    <div className='services social-media'>
         <div className="services-title"><h2>{props.title}</h2> <img className='titleImg' src={TitleImg} alt="" /></div>
         <div className="service-wrapper">
             <Item 

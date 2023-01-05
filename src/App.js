@@ -5,6 +5,7 @@ import Hero from './Components/Hero'
 import SocialMedia from './Components/SocialMedia';
 import Services from './Components/Services';
 import About from './Components/About';
+import Articles from './Components/Articles';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Services title="My skills" />
       <About/>
       <SocialMedia title="Take a look at my resume"/>
+      <Articles/>
     </div>
   );
 }

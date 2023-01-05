@@ -5,13 +5,28 @@ import Portfloio from '../Components/Portfolio.jsx'
 
 function Navbar() {
 
+  document.addEventListener("scroll", (event)=>{
+    const scroolPosition = event.target.scrollingElement.scrollTop;
+    const navBar = document.getElementById("navBar")
+    navBar.style.transition = "0.4s all"; 
+
+    if(scroolPosition > 150){
+      navBar.style.padding = "2rem 7rem";  
+      navBar.style.boxShadow = "2px 2px 2px 2px rgba(0, 0, 0, 0.1)";  
+    }
+    else{
+      navBar.style.padding = "3rem 10rem"
+      navBar.style.boxShadow = "none";  
+    }
+  })
+
   let [navBarIcon, setNavBarIcon] = React.useState(true)
 
   function toggle(){
     setNavBarIcon(prevIcon => !prevIcon)
   }
   return (
-    <div className='navBar'>
+    <div id='navBar' className='navBar'>
       <div className="nav-logo"><a href="./App.js"><img src={navbarSvg} alt="logo" /></a></div>
       {!navBarIcon ? <div className='mob-bg'></div> : ""}
       <div className={navBarIcon ? "navbar-list" : "navbar-list mob-navbar-list"}>
