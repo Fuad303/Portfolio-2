@@ -11,11 +11,11 @@ function Navbar() {
     navBar.style.transition = "0.4s all"; 
 
     if(scroolPosition > 150){
-      navBar.style.padding = "2rem 7rem";  
+      navBar.style.padding = "1.5rem 4rem";  
       navBar.style.boxShadow = "2px 2px 2px 2px rgba(0, 0, 0, 0.1)";  
     }
     else{
-      navBar.style.padding = "3rem 10rem"
+      navBar.style.padding = "2rem 3.1rem"
       navBar.style.boxShadow = "none";  
     }
   })
@@ -31,9 +31,9 @@ function Navbar() {
       {!navBarIcon ? <div className='mob-bg'></div> : ""}
       <div className={navBarIcon ? "navbar-list" : "navbar-list mob-navbar-list"}>
         <ul>
-          <a href={Navbar}><li>Home</li></a>
-          <a href={About}><li>About</li></a>
-          <a href={Portfloio}><li>Portfloio</li></a>
+          <li><a href={Navbar}>Home</a></li>
+          <li><a href={About}>About</a></li>
+          <li><a href={Portfloio}>Portfloio</a></li>
         </ul>
       </div>
       <div className={navBarIcon ? "navbar-email" : "navbar-email mob-navbar-list"}>

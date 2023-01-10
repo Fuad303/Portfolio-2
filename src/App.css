@@ -1,4 +1,3 @@
-
 /* Navbar */
 .navBar{
     padding: 3rem 10rem;
@@ -52,17 +51,11 @@
 .mobileNav:hover{
     transform: scale(0.9);
 }
-@media only screen and (min-width: 991px){
-    .navbar-list,
-    .navbar-email{
-        position: static;
-    }
-}
 /* Hero */
 .hero{
-    padding: 0 10.5%;
-    margin: 10rem 0;
+    padding: 2rem;
     display: flex;
+    margin-top: 10rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -70,6 +63,10 @@
     font-size: 2.4rem;
     line-height: 2.5em;
     letter-spacing: 0.08rem;
+}
+.hero-title h1{
+    font-size: 3rem;
+    font-weight: bold;
 }
 .hero-name {
     font-size: 2rem;
@@ -96,14 +93,15 @@
 }
 /* Item CSS */
 .services{
-    margin-top: 20rem;
-    padding: 0 12%;
+    margin: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .services-title h2{
     text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
 }
 .service-wrapper{
     display: grid;
@@ -131,7 +129,7 @@
 }
 .item{
     background-color: var(--white);
-    padding: 4rem 3.9rem;
+    padding: 2.9rem 3.8rem;
     border-radius: 1rem;
 }
 .item:nth-child(1),
@@ -189,8 +187,8 @@
 }
 /* About CSS */
 .about{
-    margin: 16rem 0;
-    padding: 0 10.5%;
+    padding: 2rem;
+    margin: 13rem 0;
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -201,8 +199,12 @@
     object-fit: cover;
     border-radius: 2rem;
 }
-.about-title{
+.about-title {
     font-size: 2rem;
+}
+.about-title h2{
+    font-size: 3rem;
+    font-weight: 600;
 }
 .about-text{
     font-size: 1.5rem;
@@ -217,13 +219,17 @@
 /* Article */
 .article{
     margin: 10rem 0;
-    padding: 0 10.5%;
+    padding: 0 2rem;
 }
 .article-title{
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+.article-title h2{
+    font-size: 3rem;
+    font-weight: 600;
 }
 .article-wrapper{
     display: flex;
@@ -262,9 +268,6 @@
     color: var(--bg-secondary);
 }
 @media only screen and (max-width: 991px){
-    body{
-        padding-left: 3%;
-    }
     .navbar-list, 
     .navbar-email{
         transform: translateX(-500%);
@@ -273,7 +276,7 @@
         z-index: 2;
     }
     .navBar{
-        padding: 3rem 7rem;
+        padding: 2rem 3.1rem;
     }
     .navbar-list::after{
         content: "";
@@ -302,14 +305,14 @@
     }
     .navbar-email,
     .mob-navbar-email{
-        top: 22rem !important;
+        top: 20.5rem !important;
         padding-bottom: 1rem;
         width: 100%;
     }
     .navbar-list ul,
     .mob-navbar-list ul{
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
     }
     .mob-bg{
         width: 100%;
@@ -324,30 +327,18 @@
         box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
     }
     .about{
-        position: absolute;
         flex-direction: column-reverse;
-        top: 300rem;
-        margin: 0 8rem;
         width: 100vw;   
         padding: 0 2rem;
     }
     .hero{
-        position: absolute;
-        top: 14rem;
-        margin-top: 0;
+        margin-top: 15rem;
     }
     .services{
-        position: absolute;
-        top: 120rem;
-        width: 100vw;
-        margin: 0 7rem;
+        margin-top: 10rem;
         padding: 0;
         display: flex;
         justify-content: center;
-    }
-    .social-media{
-        position: absolute;
-        top: 390rem;
     }
     .service-wrapper{
         grid-template-columns: 1fr;
@@ -358,8 +349,6 @@
         flex-direction: column;
     }
     .article{
-        position: absolute;
-        top: 490rem;
         width: 100%;
     }
     .article-wrapper,
@@ -369,13 +358,17 @@
     .article-item{
         width: 100%;
     }
-}
-@media only screen and (max-width: 400px){
-    .about,
-    .social-media{
-        margin-top: 50rem;
+    .getInTouch{
+        padding: 1.4rem 3.6rem;
+        font-weight: 500;
     }
-    .article{
-        margin-top: 70rem;
+}
+@media only screen and (max-width: 575px){
+    .hero-title img{
+        width: 28rem;
+    }
+    .hero-img img{
+        width: 25rem;
+        margin-top: 4rem;
     }
 }
