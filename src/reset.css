@@ -4,6 +4,15 @@
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
 }
+:root{
+    --bg-secondary: #777990;
+    --black: #000000;
+    --light-black: #14142b;
+    --white: #FFFFFF;
+    --border-color: #ccc;
+    --main-text-color: #4e4b66;
+    --pink: #f6f7ff;
+}
 html{
     font-size: 67.5%;
     overflow-x: hidden;
@@ -16,14 +25,8 @@ ul, ol{
 }
 body a{
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
 }
-:root{
-    --bg-secondary: #777990;
-    --black: #000000;
-    --light-black: #14142b;
-    --white: #FFFFFF;
-    --border-color: #ccc;
-    --main-text-color: #4e4b66;
-    --pink: #f6f7ff;
+body a:hover{
+    color: var(--black);
 }

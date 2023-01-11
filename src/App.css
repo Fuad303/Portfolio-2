@@ -1,6 +1,6 @@
 /* Navbar */
 .navBar{
-    padding: 3rem 10rem;
+    padding: 2rem 3.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +65,7 @@
     letter-spacing: 0.08rem;
 }
 .hero-title h1{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 .hero-name {
@@ -159,7 +159,7 @@
     color: var(--bg-secondary);
 }
 .item-text{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 1.7em;
     color: var(--bg-secondary);
 }
@@ -334,6 +334,9 @@
     .hero{
         margin-top: 15rem;
     }
+    .hero-title h1{
+        font-size: 2.6rem;
+    }
     .services{
         margin-top: 10rem;
         padding: 0;
@@ -360,6 +363,7 @@
     }
     .getInTouch{
         padding: 1.4rem 3.6rem;
+        width: 100%;
         font-weight: 500;
     }
 }
