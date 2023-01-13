@@ -10,7 +10,7 @@ import heroImg from '../images/hero-img.svg'
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-export default () => {
+export default function Carousel() {
   return (
     <>
     <div className="swiper-title">
@@ -77,7 +77,7 @@ export default () => {
           messages or files using a variety of different 
           techniques. 
         </div>
-        <a href='https://encrpytion.cf' className="carousel-link">Get to details <ion-icon name="arrow-forward-outline"></ion-icon></a>
+        <a href='http://encryption.cf/' className="carousel-link">Get to details <ion-icon name="arrow-forward-outline"></ion-icon></a>
       </SwiperSlide>
       <SwiperSlide className="swiper-item">
         <div className="item-img">
