@@ -25,7 +25,7 @@ function Navbar(props) {
   }
   return (
     <div id='navBar' className='navBar'>
-      <div className="nav-logo"><a href="./App.js"><img src={navbarSvg} alt="logo" /></a></div>
+      <div className="nav-logo" onClick={props.scrollHome}><img src={navbarSvg} alt="logo" /></div>
       {!navBarIcon ? <div className='mob-bg'></div> : ""}
       <div className={navBarIcon ? "navbar-list" : "navbar-list mob-navbar-list"}>
         <ul>
