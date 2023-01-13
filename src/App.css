@@ -23,6 +23,7 @@
 }
 .nav-logo{
     transition: 0.4s all;
+    cursor: pointer;
 }
 .nav-logo:hover{
     transform: translate(0px, -6px);
