@@ -7,7 +7,7 @@ import javascriptLogo from '../images/Javascript_Logo.svg'
 
 export default function Services(props) {
   return (
-    <div className='services'>
+    <div  className='services'>
         <div className="services-title"><h2>{props.title}</h2> <img className='titleImg' src={TitleImg} alt="" /></div>
         <div className="service-wrapper">
             <Item

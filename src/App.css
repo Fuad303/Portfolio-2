@@ -16,6 +16,7 @@
 .navbar-list ul{
     display: flex;
     column-gap: 2rem;
+    cursor: pointer;
 }
 .navbar-list ul li:hover{
     color: var(--bg-secondary);
@@ -278,6 +279,10 @@
 .swiper-title img{
     width: 25rem;
 }
+.swiper-wrapper:hover .swiper-item:not(:hover){
+    filter: opacity(0.5);
+    transition: 0.4s all;
+}
 .swiper-item img{
     width: 100%;
     height: 34rem;
@@ -339,7 +344,7 @@
     }
     .navbar-email,
     .mob-navbar-email{
-        top: 20.5rem !important;
+        top: 27.1rem !important;
         padding-bottom: 1rem;
         width: 100%;
     }
@@ -350,7 +355,7 @@
     }
     .mob-bg{
         width: 100%;
-        height: 27rem;
+        height: 32rem;
         background-color: var(--white);
         position: absolute;
         z-index: -1;

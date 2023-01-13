@@ -1,9 +1,7 @@
 import React from 'react'
 import navbarSvg from '../images/navbar.svg'
-import About from '../Components/About.jsx'
-import Portfloio from '../Components/Portfolio.jsx'
 
-function Navbar() {
+function Navbar(props) {
 
   document.addEventListener("scroll", (event)=>{
     const scroolPosition = event.target.scrollingElement.scrollTop;
@@ -31,9 +29,11 @@ function Navbar() {
       {!navBarIcon ? <div className='mob-bg'></div> : ""}
       <div className={navBarIcon ? "navbar-list" : "navbar-list mob-navbar-list"}>
         <ul>
-          <li><a href={Navbar}>Home</a></li>
-          <li><a href={About}>About</a></li>
-          <li><a href={Portfloio}>Portfloio</a></li>
+          <li onClick={props.scrollHome}>Home</li>
+          <li onClick={props.scrollServices}>Services</li>
+          <li onClick={props.scrollAbout}>About</li>
+          <li onClick={props.scrollArticles}>Articles</li>
+          <li onClick={props.scrollPortfolio}>Portfloio</li>
         </ul>
       </div>
       <div className={navBarIcon ? "navbar-email" : "navbar-email mob-navbar-list"}>

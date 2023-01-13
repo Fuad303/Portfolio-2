@@ -17,7 +17,8 @@ export default function Carousel() {
       Take a look at my design portfolio
       <img src={heroImg} alt="" />
     </div>
-    <Swiper
+    <div className="swiper-wrapper">
+    <Swiper className='swiper-wrapper'
       // install Swiper modules
       
       modules={[Navigation, A11y]}
@@ -45,10 +46,13 @@ export default function Carousel() {
         </div>
         <div className="carousel-title">Meme generator</div>
         <div className="carousel-text">
+          <p>
           A meme generator website allows users to create 
           and share their own memes by providing a library of 
           popular meme templates, along with the ability 
           to add custom text and images.
+          </p>
+          
         </div>
         <a href='https://random-meme.netlify.app' className="carousel-link">Get to details <ion-icon name="arrow-forward-outline"></ion-icon></a>
       </SwiperSlide>
@@ -58,10 +62,12 @@ export default function Carousel() {
         </div>
         <div className="carousel-title">Waste Money</div>
         <div className="carousel-text">
+          <p>
           A simple waste money website would allow users to 
           input their spending habits and budget, then 
           provide suggestions on where they can cut back 
           or optimize their spending in order to save money.
+          </p>
         </div>
         <a href='https://waste-money.netlify.app' className="carousel-link">Get to details <ion-icon name="arrow-forward-outline"></ion-icon></a>
       </SwiperSlide>
@@ -71,11 +77,13 @@ export default function Carousel() {
         </div>
         <div className="carousel-title">Encryption System</div>
         <div className="carousel-text">
+          <p>
           An encryption website that supports base-32, 
           Caesar, and reverse encryption methods would 
           allow users to securely encode their text 
           messages or files using a variety of different 
-          techniques. 
+          techniques.
+          </p>
         </div>
         <a href='http://encryption.cf/' className="carousel-link">Get to details <ion-icon name="arrow-forward-outline"></ion-icon></a>
       </SwiperSlide>
@@ -85,13 +93,16 @@ export default function Carousel() {
         </div>
         <div className="carousel-title">Dentist Website</div>
         <div className="carousel-text">
+          <p>
           A dentist website is a website that provides 
           information about a dental practice and 
           the services they offer. 
+          </p>
         </div>
         <a href='https://saaf.netlify.app' className="carousel-link">Get to details <ion-icon name="arrow-forward-outline"></ion-icon></a>
       </SwiperSlide>
     </Swiper>
+    </div>
     </>
   );
 };
