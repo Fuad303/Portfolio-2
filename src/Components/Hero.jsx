@@ -1,11 +1,11 @@
 import React from 'react'
 import textImg from '../images/hero-img.svg'
-
-function Hero(props) {
+import heroImg from '../images/image0.jpeg'
+function Hero() {
   return (
     <div className='hero'>
       <div className="hero-info">
-        <div className="hero-name">Hey, I’m John Carter</div>
+        <div className="hero-name">Hey, I’m Fuad</div>
         <div className="hero-title">
           <h1>
           I enjoy designing tech websites and digital products
@@ -13,11 +13,11 @@ function Hero(props) {
           <img src={textImg} alt="" />
           </div>
           <div className="hero-btn">
-            <button className='getInTouch'>Get in touch</button>
+          <a href="mailto:sadiqovfuad8@gmail.com"><button className='getInTouch'>Get in touch</button></a>
           </div>
       </div>
       <div className="hero-img">
-        <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112af58d6338c4181aaed8c_hero-image-personal-x-template-p-500.png" alt="" />
+        <img src={heroImg} alt="" />
       </div>
     </div>
   )

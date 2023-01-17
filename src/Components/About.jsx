@@ -7,12 +7,17 @@ export default function About() {
       <div className="about-description">
         <div className="about-title"><h2>About me</h2></div>
         <div className="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc 
-            aliquam tincidunt est non. Viverra nec eu, in ridiculus egestas mi. 
-            Vulputate tristique porttitor enim aliquam ullamcorper. 
-            Velit dui laoreet in et mus.
+        I am a highly skilled and experienced 
+        React front-end developer with a passion 
+        for creating visually stunning and intuitive 
+        websites. My portfolio showcases my ability 
+        to deliver responsive and user-friendly 
+        designs that drive engagement and conversions. 
+        I am always striving to stay on top of the latest 
+        technologies and industry trends to bring 
+        the best possible solutions to my clients.
         </div>
-        <div className="about-btn"><button className='getInTouch'>More About me</button></div>
+        <div className="about-btn"><a href="https://github.com/Fuad303"><button className='getInTouch'>More About me</button></a></div>
       </div>
     </div>
   )

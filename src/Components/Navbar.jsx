@@ -1,6 +1,6 @@
 import React from 'react'
 import navbarSvg from '../images/navbar.svg'
-
+import CV from '../images/Fuad-Sadiqov.pdf'
 function Navbar(props) {
 
   document.addEventListener("scroll", (event)=>{
@@ -34,6 +34,7 @@ function Navbar(props) {
           <li onClick={props.scrollAbout}>About</li>
           <li onClick={props.scrollArticles}>Articles</li>
           <li onClick={props.scrollPortfolio}>Portfloio</li>
+          <li><a href={CV}>CV</a></li>
         </ul>
       </div>
       <div className={navBarIcon ? "navbar-email" : "navbar-email mob-navbar-list"}>

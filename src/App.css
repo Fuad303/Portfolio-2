@@ -42,7 +42,7 @@
     color: var(--bg-secondary);
 }
 .mobileNav{
-    font-size: 3rem;
+    font-size: 2.4rem;
     display: none;
     background-color: var(--black);
     color: var(--white);
@@ -64,7 +64,8 @@
 .hero{
     padding: 2rem;
     display: flex;
-    margin-top: 10rem;
+    gap: 6rem;
+    margin: 10rem 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -76,6 +77,12 @@
 .hero-title h1{
     font-size: 5rem;
     font-weight: bold;
+}
+.hero-img img{
+    width: 45rem;
+    height: 45rem;
+    object-fit: cover;
+    border-radius: 1.6rem;
 }
 .hero-name {
     font-size: 2rem;
@@ -396,7 +403,7 @@
     }
     .navbar-email,
     .mob-navbar-email{
-        top: 27.1rem !important;
+        top: 30.5rem !important;
         padding-bottom: 1rem;
         width: 100%;
     }
@@ -407,7 +414,7 @@
     }
     .mob-bg{
         width: 100%;
-        height: 32rem;
+        height: 35rem;
         background-color: var(--white);
         position: absolute;
         z-index: -1;
@@ -427,6 +434,9 @@
     }
     .hero-title h1{
         font-size: 2.6rem;
+    }
+    .hero-img img{
+        height: 30rem;
     }
     .services{
         margin-top: 10rem;

@@ -3,7 +3,7 @@ import '../src/reset.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
-import SocialMedia from './Components/SocialMedia'
+// import SocialMedia from './Components/SocialMedia'
 import Services from './Components/Services'
 import About from './Components/About'
 import Articles from './Components/Articles'
@@ -39,11 +39,11 @@ function App() {
           scrollAbout={scrollAbout}
           scrollArticles={scrollArticles}
           scrollPortfolio={scrollPortfolio}
-        /></div>
+        />
+        </div>
         <Hero />
         <div ref={services}><Services title="My skills" /></div>
         <div ref={about}><About/></div>
-        <SocialMedia title="Take a look at my resume"/>
         <div ref={articles}><Articles/></div>
         <div ref={portfolio}><Carousel/></div>
         <Footer
@@ -57,5 +57,4 @@ function App() {
     </div>
   )
 }
-
 export default App
