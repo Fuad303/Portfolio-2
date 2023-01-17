@@ -20,8 +20,8 @@ html{
 }
 ul, ol{
     list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
 }
 body a{
     text-decoration: none;

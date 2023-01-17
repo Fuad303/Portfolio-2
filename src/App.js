@@ -1,5 +1,6 @@
 import './App.css'
 import '../src/reset.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import SocialMedia from './Components/SocialMedia'

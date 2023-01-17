@@ -12,6 +12,7 @@
     font-size: 1.6rem;
     letter-spacing: 0.08rem;
     z-index: 10;
+    transition: 0.4s all;
 }
 .navbar-list ul{
     display: flex;
@@ -49,9 +50,15 @@
     border-radius: 50%;
     cursor: pointer;
     transition: 0.4s all;
+    animation: beat 0.7s infinite alternate;
+	transform-origin: center;
+}
+
+@keyframes beat{
+	to { transform: scale(1.15); }
 }
 .mobileNav:hover{
-    transform: scale(0.9);
+    animation: none;
 }
 /* Hero */
 .hero{
