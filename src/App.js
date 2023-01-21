@@ -35,7 +35,6 @@ function App() {
   const [curName, setCurName] = useState({name: ''})
   const handleMove = (e) =>{
     setCurPos({x: e.clientX, y: e.clientY})
-    console.log(e.target.tagName);
     switch (e.target.tagName) {
       case 'BUTTON':
         setCurName({name: "link"})
