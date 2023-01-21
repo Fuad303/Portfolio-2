@@ -29,7 +29,7 @@ function Navbar(props) {
       {!navBarIcon ? <div className='mob-bg'></div> : ""}
       <div className={navBarIcon ? "navbar-list" : "navbar-list mob-navbar-list"}>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li onClick={props.scrollHome}>Home</li>
           <li onClick={props.scrollServices}>Services</li>
           <li onClick={props.scrollAbout}>About</li>
           <li onClick={props.scrollArticles}>Articles</li>
