@@ -21,7 +21,7 @@ export default function Footer(props) {
             <div className="footer-item footer-list">
                 <h4>Pages</h4>
                 <ul>
-                    <li onClick={props.footerScrollHome}></li>
+                    <li onClick={props.footerScrollHome}>Home</li>
                     <li onClick={props.footerScrollServices}>Services</li>
                     <li onClick={props.footerScrollAbout}>About</li>
                     <li onClick={props.footerScrollArticles}>Articles</li>
