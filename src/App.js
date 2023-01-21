@@ -9,9 +9,10 @@ import About from './Components/About'
 import Articles from './Components/Articles'
 import Carousel from './Components/Carousel'
 import Footer from './Components/Footer'
-import { useRef } from 'react'
+import React, { useState, useRef } from 'react'
 
 function App() {
+  
   const home = useRef(null)
   const services = useRef(null)
   const about = useRef(null)
@@ -29,8 +30,27 @@ function App() {
   const scrollAbout = () => scrollToSection(about)
   const scrollArticles = () => scrollToSection(articles)
   const scrollPortfolio = () => scrollToSection(portfolio)
+  
+  const [curPos, setCurPos] = useState({x: 0, y: 0})
+  const [curName, setCurName] = useState({name: ''})
+  const handleMove = (e) =>{
+    setCurPos({x: e.clientX, y: e.clientY})
+
+    switch (e.target.tagName) {
+      case 'BUTTON':
+        setCurName({name: "link"})
+        break;
+      case 'IMG':
+        setCurName({name: "img"})
+        break;
+      default:
+        setCurName({name: "cursor"})
+        break;
+    }
+  }
   return (
-    <div className="App">
+    <div onMouseMove={handleMove} className="App">
+      <div style={{top: curPos.y, left: curPos.x}} className={curName.name + " cursor"}></div>
       <div className='container'>
         <div ref={home}>
         <Navbar 
@@ -41,7 +61,7 @@ function App() {
           scrollPortfolio={scrollPortfolio}
         />
         </div>
-        <Hero />
+        <Hero/>
         <div ref={services}><Services title="My skills" /></div>
         <div ref={about}><About/></div>
         <div ref={articles}><Articles/></div>
