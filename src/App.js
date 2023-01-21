@@ -35,13 +35,19 @@ function App() {
   const [curName, setCurName] = useState({name: ''})
   const handleMove = (e) =>{
     setCurPos({x: e.clientX, y: e.clientY})
-
+    console.log(e.target.tagName);
     switch (e.target.tagName) {
       case 'BUTTON':
         setCurName({name: "link"})
         break;
       case 'IMG':
-        setCurName({name: "img"})
+        setCurName({name: "image"})
+        break;
+      case "LI":
+        setCurName({name: "list"})
+        break;
+      case "A":
+        setCurName({name: "list"})
         break;
       default:
         setCurName({name: "cursor"})
@@ -50,7 +56,9 @@ function App() {
   }
   return (
     <div onMouseMove={handleMove} className="App">
-      <div style={{top: curPos.y, left: curPos.x}} className={curName.name + " cursor"}></div>
+      <div style={{top: curPos.y, left: curPos.x}} className={curName.name + " cursor"}>
+          <ion-icon name={curName.name+"-outline"}></ion-icon>
+      </div>
       <div className='container'>
         <div ref={home}>
         <Navbar 
