@@ -49,14 +49,14 @@ function App() {
         setCurName({name: "list"})
         break;
       default:
-        setCurName({name: "cursor"})
+        setCurName({name: ""})
         break;
     }
   }
   return (
     <div onMouseMove={handleMove} className="App">
       <div style={{top: curPos.y, left: curPos.x}} className={curName.name + " cursor"}>
-          <ion-icon name={curName.name+"-outline"}></ion-icon>
+          {curName.name ? <ion-icon name={curName.name+"-outline"}></ion-icon> : ""}
       </div>
       <div className='container'>
         <div ref={home}>
