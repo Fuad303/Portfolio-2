@@ -1,0 +1,19 @@
+.DarkApp,
+.DarkApp .item,
+.DarkApp .mob-bg,
+.DarkApp .navBar,
+.DarkApp body{
+    background-color: var(--soft-black);
+}
+.DarkApp *,
+.DarkApp #cursorIcon{
+    color: var(--white);
+}
+.DarkApp .getInTouch,
+.DarkApp .getInTouch:hover{
+    background-color: var(--white);
+    color: var(--soft-black);
+}
+.DarkApp .item{
+    border: 1px solid var(--white);
+}

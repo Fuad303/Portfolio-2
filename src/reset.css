@@ -8,6 +8,11 @@
 *:hover{
     cursor: none !important;
 }
+@media(max-width: 768px){
+    *, *:hover{
+        cursor: auto;
+    }
+}
 :root{
     --bg-secondary: #777990;
     --black: #000000;
@@ -16,11 +21,13 @@
     --border-color: #ccc;
     --main-text-color: #4e4b66;
     --pink: #f6f7ff;
+    --soft-black: #222222;
 }
 html{
     font-size: 67.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    width: 100%;
 }
 ul, ol{
     list-style: none;
@@ -30,9 +37,7 @@ ul, ol{
 body a{
     text-decoration: none;
     color: var(--black);
-    cursor: none;
 }
 body a:hover{
     color: var(--black);
-    cursor: none;
 }

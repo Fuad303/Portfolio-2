@@ -1,4 +1,5 @@
 import './App.css'
+import './Mode.css'
 import '../src/reset.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar'
@@ -33,6 +34,7 @@ function App() {
   
   const [curPos, setCurPos] = useState({x: 0, y: 0})
   const [curName, setCurName] = useState({name: ''})
+  const [mode, setMode] = useState(false)
   const handleMove = (e) =>{
     setCurPos({x: e.clientX, y: e.clientY})
     switch (e.target.tagName) {
@@ -53,9 +55,12 @@ function App() {
         break;
     }
   }
+  const toggleMode = () =>{
+    setMode(prevMode => !prevMode)
+  }
   return (
-    <div onMouseMove={handleMove} className="App">
-      <div style={{top: curPos.y, left: curPos.x}} className={curName.name + " cursor"}>
+    <div onMouseMove={handleMove} className={!mode ? "App" : "App DarkApp"}>
+      <div style={{top: curPos.y, left: curPos.x}} id="cursorIcon" className={curName.name + " cursor"}>
           {curName.name ? <ion-icon name={curName.name+"-outline"}></ion-icon> : ""}
       </div>
       <div className='container'>
@@ -81,6 +86,7 @@ function App() {
           footerScrollPortfolio={() => scrollToSection(portfolio)}
           />
       </div>
+      <div onClick={toggleMode} className="mode"><ion-icon name={mode ? "moon-outline" : "sunny-outline"}></ion-icon></div>
     </div>
   )
 }

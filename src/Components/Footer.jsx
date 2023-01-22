@@ -1,8 +1,5 @@
 import React from 'react'
 import navbarSvg from '../images/navbar.svg'
-import footerİnstagram from '../images/footer-instagram.svg'
-import footerLinkedin from '../images/footer-linkedin.svg'
-import footerWhatsapp from '../images/footer-whatsapp.svg'
 
 export default function Footer(props) {
   return (
@@ -12,9 +9,10 @@ export default function Footer(props) {
                 <div className="footer-logo" onClick={props.footerScrollHome}><img src={navbarSvg} alt="" /></div>
                 <div className="footer-social">
                     <ul>
-                        <li><a href="https://www.instagram.com/iamnotfuad/"><img src={footerİnstagram} alt="" /></a></li>
-                        <li><a href="https://www.linkedin.com/in/fuad-sadiqov-9405a61a5/"><img src={footerLinkedin} alt="" /></a></li>
-                        <li><a href="https://wa.me/+994503038406"><img src={footerWhatsapp} alt="" /></a></li>
+                        <li><a href="https://www.instagram.com/iamnotfuad/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/in/fuad-sadiqov-9405a61a5/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="https://wa.me/+994503038406"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        <li><a href="https://www.github.com/Fuad303"><ion-icon name="logo-github"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
