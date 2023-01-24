@@ -59,6 +59,11 @@
 .nav-logo:hover{
     transform: translate(0px, -6px);
 }
+.nav-logo span,
+.footer-logo span{
+    font-family: 'Aboreto', cursive;
+    font-size: 2.2rem;
+}
 .navbar-email ion-icon{
     font-size: 2rem !important;
 }

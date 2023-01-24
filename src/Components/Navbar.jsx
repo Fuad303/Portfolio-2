@@ -1,5 +1,4 @@
 import React from 'react'
-import navbarSvg from '../images/navbar.svg'
 import CV from '../images/Fuad-Sadiqov.pdf'
 function Navbar(props) {
 
@@ -25,7 +24,9 @@ function Navbar(props) {
   }
   return (
     <div id='navBar' className='navBar'>
-      <div className="nav-logo" onClick={props.scrollHome}><img src={navbarSvg} alt="logo" /></div>
+      <div className="nav-logo" onClick={props.scrollHome}>
+      <span>Fuad</span>
+      </div>
       {!navBarIcon ? <div className='mob-bg'></div> : ""}
       <div className={navBarIcon ? "navbar-list" : "navbar-list mob-navbar-list"}>
         <ul>

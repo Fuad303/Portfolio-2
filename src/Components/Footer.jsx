@@ -1,12 +1,11 @@
 import React from 'react'
-import navbarSvg from '../images/navbar.svg'
 
 export default function Footer(props) {
   return (
     <div className='footer'>
         <div className="footer-wrapper">
             <div className="footer-item">
-                <div className="footer-logo" onClick={props.footerScrollHome}><img src={navbarSvg} alt="" /></div>
+                <div className="footer-logo" onClick={props.footerScrollHome}><span>Fuad</span></div>
                 <div className="footer-social">
                     <ul>
                         <li><a href="https://www.instagram.com/iamnotfuad/"><ion-icon name="logo-instagram"></ion-icon></a></li>
