@@ -11,7 +11,7 @@ export default function Footer(props) {
                         <li><a href="https://www.instagram.com/iamnotfuad/"><ion-icon name="logo-instagram"></ion-icon></a></li>
                         <li><a href="https://www.linkedin.com/in/fuad-sadiqov-9405a61a5/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                         <li><a href="https://wa.me/+994503038406"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                        <li><a href="https://www.github.com/Fuad303"><ion-icon name="logo-github"></ion-icon></a></li>
+                        <li><a href="https://www.github.com/fuadsadiqov"><ion-icon name="logo-github"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
