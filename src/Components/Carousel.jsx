@@ -69,7 +69,7 @@ export default function Carousel() {
           or optimize their spending in order to save money.
           </p>
         </div>
-        <a href='https://ecommerce-waste-money.netlify.app/' className="carousel-link">Get to details <ion-icon name="arrow-forward-outline"></ion-icon></a>
+        <a href='https://waste-money.netlify.app/' className="carousel-link">Get to details <ion-icon name="arrow-forward-outline"></ion-icon></a>
       </SwiperSlide>
       <SwiperSlide className="swiper-item">
         <div className="item-img">
